@@ -1,0 +1,64 @@
+/* ---------------------------
+   1. Einbindung der Poppins-Fonts
+---------------------------- */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ---------------------------
+   2. Tailwind-Kompatibilität & Standard
+---------------------------- */
+:root {
+  --tw-font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+body {
+  font-family: var(--tw-font-sans);
+  font-weight: 400; /* Standard: Regular */
+  color: #6B7280;
+}
+
+/* ---------------------------
+   3. Zusätzliche Hilfsklassen (optional)
+---------------------------- */
+
+/* Dünne Labels in Formularen */
+.label-light {
+  font-weight: 300;
+  font-size: 0.875rem; /* entspricht text-sm */
+  opacity: 0.8;
+  color: #ef4444; /* Tailwind's red-500 */
+}
+
+/* Überschriften fett */
+.heading-bold {
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+/* Fließtext normal */
+.text-regular {
+  font-weight: 400;
+}
+
+/* Falls du mal serif brauchst (z. B. für Zitate o. Ä.) */
+.font-serif {
+  font-family: Georgia, 'Times New Roman', serif;
+}
