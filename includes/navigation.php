@@ -1,8 +1,8 @@
 <?php include("includes/menuItems.php"); ?>
 
 <!-- Sidebar (Desktop) -->
-  <aside class="hidden lg:flex flex-col bg-red-600 text-white p-6 text-left h-screen">
-    <h3 class="text-lg font-bold lg:mb-10">Company Name</h3>
+<aside class="hidden lg:flex flex-col bg-red-600 text-white p-6 text-left min-h-screen">
+      <h3 class="text-lg font-bold lg:mb-10">Company Name</h3>
     <nav class="space-y-2">
       <?php foreach ($navLinks as $link): ?>
         <a href="<?= $link['href'] ?>" class="block hover:underline"><?= $link['label'] ?></a>
