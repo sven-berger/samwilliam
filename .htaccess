@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# Statische Dateien ignorieren
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.(js|css|json|jpg|jpeg|png|gif|svg|woff2?|ttf|eot|ico)$ - [L]
+
+# Einzeldateien wie zahlen-raten.php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L]
+
+# ✨ URLs wie /mein-wandel/ auf index.php?page=mein-wandel
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?page=$1 [L]
+
+# Fallback für alles andere, was nicht existiert
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]

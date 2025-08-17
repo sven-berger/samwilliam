@@ -1,14 +1,25 @@
 <?php
 
 $navLinks = [
-  ['href' => 'index.php?page=index', 'label' => 'Startseite'],
-  ['href' => 'index.php?page=zahlen-raten', 'label' => 'Zahlen raten'],
-  ['href' => '/web-kompakt/', 'label' => 'Web Kompakt', 'target' => '_blank'],
-  ['href' => '/index.php?page=mein-wandel', 'label' => 'Mein Wandel']
+  ['href' => '/', 'label' => 'Startseite'],
+  ['href' => '/mein-wandel/', 'label' => 'Mein Wandel'],
+
+  [
+    'label' => 'Spielereien',
+    'children' => [
+      ['href' => '/zahlen-raten/', 'label' => 'Zahlen raten'],
+    ]
+  ],
+  [
+    'label' => 'Sonstiges',
+    'children' => [
+      ['href' => '../web-kompakt/', 'label' => 'Web Kompakt', 'target' => '_blank'],
+    ]
+  ]
 ];
 
 $footerLinks = [
-  ['href' => 'index.php?page=impressum', 'label' => 'Impressum'],
-  ['href' => 'index.php?page=datenschutz', 'label' => 'Datenschutzerklärung'],
-  ['href' => 'index.php?page=kontakt', 'label' => 'Kontakt'],
+  ['href' => '/impressum/', 'label' => 'Impressum'],
+  ['href' => '/datenschutz/', 'label' => 'Datenschutzerklärung'],
+  ['href' => '/kontakt/', 'label' => 'Kontakt']
 ];

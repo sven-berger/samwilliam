@@ -6,7 +6,7 @@ ob_start();
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Tailwind Test</title>
+  <title>Sam William</title>
 </head>
 
 <body class="bg-gray-300 text-center p-0 m-0 text-lg">
