@@ -3,7 +3,7 @@
 $navLinks = [
   ['href' => 'index.php?page=index', 'label' => 'Startseite'],
   ['href' => 'index.php?page=zahlen-raten', 'label' => 'Zahlen raten'],
-  ['href' => '/web-kompakt/', 'label' => 'Web kompakt'],
+  ['href' => '/web-kompakt/', 'label' => 'Web kompakt', 'target' => '_blank'],
   ['href' => '/index.php?page=mein-wandel', 'label' => 'Mein Wandel']
 ];
 
