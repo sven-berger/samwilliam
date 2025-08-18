@@ -1,4 +1,5 @@
-<?php include("includes/menuItems.php"); ?>
+<?php require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/menuItems.php"); ?>
+
 <!-- Sidebar (Desktop) -->
 <aside class="hidden lg:flex flex-col bg-red-600 text-white p-6 text-left min-h-screen">
       <h3 class="text-lg font-bold lg:mb-10">Company Name</h3>

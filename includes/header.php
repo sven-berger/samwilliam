@@ -1,5 +1,7 @@
 <?php
   ob_start();
+  require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/apiList.php");
+  require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/db.php");
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +17,7 @@
 
 <!-- Responsive Layout Wrapper -->
 <div class="lg:grid lg:grid-cols-[16rem_1fr] min-h-screen">
-  <?php include("includes/navigation.php"); ?>
+  <?php require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/navigation.php"); ?>
 
   <!-- Content Wrapper -->
   <main class="bg-gray-100 p-10 text-left text-lg min-h-screen">

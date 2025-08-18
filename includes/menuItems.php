@@ -3,6 +3,7 @@
 $navLinks = [
   ['href' => '/', 'label' => 'Startseite'],
   ['href' => '/mein-wandel/', 'label' => 'Mein Wandel'],
+  ['href' => '/blog/', 'label' => 'Mein Blog'],
 
   [
     'label' => 'Spielereien',
