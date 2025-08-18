@@ -138,3 +138,36 @@ tr:nth-child(even) td {
 .font-serif {
   font-family: Georgia, 'Times New Roman', serif;
 }
+
+.fa-graduation-cap {
+  color: #059669; /* Tailwind emerald-600 */
+}
+
+.fa-js {
+  color: #f7df1e;
+}
+
+.fa-css {
+  color: #264de4;
+}
+
+.fa-php {
+  color: #8993be;
+}
+
+.fa-code {
+  color: #db2777;
+}
+
+.fa-react {
+  color: #61dafb;
+}
+
+.fa-database {
+  color: #2563eb;
+}
+
+.icon-xl {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
