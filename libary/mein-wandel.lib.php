@@ -1,7 +1,6 @@
-<h1 class="text-7xl mb-40 font-bold">
+<h1 class="text-7xl font-bold mb-10">
   Mein Wandel
 </h1>
-
 <section class="mb-20">
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
   <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -14,7 +13,7 @@
   <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
     <!-- Version 1 -->
     <div class="mt-10 mb-10">
-      <img src="/images/mein-wandel/codevoyage-1.0.0.png" alt="Version 1.0.0" class="p-5 border-4 bg-orange-500 border-orange-400 w-full rounded-xl shadow-inner">
+      <img src="/images/mein-wandel/codevoyage-1.0.0.png" alt="Version 1.0.0" class="p-5 border-4 bg-orange-500 border-orange-400  w-full rounded-xl shadow-inner">
       <div class="mt-6">
         <p>
           <strong>📌 Version 1.0.0</strong> – Erste Versuche selbst zu entwickeln.

@@ -1,6 +1,12 @@
-<h1 class="text-7xl mb-40 font-bold">
+<h1 class="text-7xl font-bold mb-10">
   Startseite
 </h1>
+<section class="mb-20">
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</section>
 
 <section class="mb-20">
   <h2 class="inline-block text-5xl border-b-4 text-red-500 border-orange-400 pb-2 mb-10 font-bold">Aktueller Wissensstand</h2>
