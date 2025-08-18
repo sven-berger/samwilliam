@@ -1,7 +1,7 @@
 <?php
   ob_start();
-  require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/apiList.php");
   require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/db.php");
+  require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/apiList.php");
 ?>
 
 <!DOCTYPE html>

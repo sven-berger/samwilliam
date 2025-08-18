@@ -1,6 +1,6 @@
 <?php
 // Daten abrufen
-$sql = "SELECT id, headline, content, date FROM blog";
+$sql = "SELECT id, headline, content, date FROM blog ORDER BY id DESC";
 $statement = $pdo->query($sql);
 $daten = $statement->fetchAll(PDO::FETCH_ASSOC);
 
