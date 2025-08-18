@@ -1,6 +1,7 @@
 /* ---------------------------
    1. Einbindung der Poppins-Fonts
 ---------------------------- */
+
 @font-face {
   font-family: 'Poppins';
   src: url('../assets/fonts/Poppins-Light.woff2') format('woff2');
@@ -25,6 +26,7 @@
 /* ---------------------------
    2. Tailwind-Kompatibilität & Standard
 ---------------------------- */
+
 :root {
   --tw-font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 }
@@ -131,7 +133,6 @@ tr:nth-child(even) td {
 /* ---------------------------
    3. Zusätzliche Hilfsklassen
 ---------------------------- */
-
 
 /* (z. B. für Zitate o. Ä.) */
 .font-serif {
