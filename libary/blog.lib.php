@@ -23,7 +23,7 @@
             <h2 class="text-xl text-red-500 mb-2"></h2>
             <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
             <h3>Veröffentlicht am <span class="text-red-500">${formatDatum(eintrag.date)}</span></h3>
-            <div class="mt-5">
+            <div class="content mt-5">
               <p>${eintrag.content}</p>
             </div>
             </section>

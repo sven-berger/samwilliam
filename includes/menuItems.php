@@ -15,6 +15,7 @@ $navLinks = [
   [
     'label' => 'Sonstiges',
     'children' => [
+      ['href' => '../tinymce/', 'label' => 'TinyMCE Editor'],
       ['href' => '../web-kompakt/', 'label' => 'Web Kompakt', 'target' => '_blank'],
     ]
   ]
