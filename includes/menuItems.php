@@ -8,6 +8,7 @@ $navLinks = [
     'label' => 'Spielereien',
     'children' => [
       ['href' => '/zahlen-raten/', 'label' => 'Zahlen raten'],
+      ['href' => '/eintrittspreise/', 'label' => 'Eintrittspreis-Rechner']
     ]
   ],
   [

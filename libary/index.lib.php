@@ -1,9 +1,9 @@
-<h1 class="text-7xl mb-10 font-bold text-black">
+<h1 class="text-7xl mb-40 font-bold">
   Startseite
 </h1>
 
 <section class="mb-20">
-  <h2 class="inline-block text-5xl border-b-4 text-red-500 border-orange-400 pb-2 mb-10 font-bold">Aktueller Wissensstand.de</h2>
+  <h2 class="inline-block text-5xl border-b-4 text-red-500 border-orange-400 pb-2 mb-10 font-bold">Aktueller Wissensstand</h2>
   <div class="flex flex-col lg:flex-row gap-6">
     <div class="flex-1 bg-white border border-gray-300 rounded-lg p-6 hover:shadow-lg hover:border-red-500 hover:border-4 hover:bg-white transition duration-300">
       <h3 class="text-xl font-semibold text-red-500 mb-2">IHK-Vorbereitung</h3>

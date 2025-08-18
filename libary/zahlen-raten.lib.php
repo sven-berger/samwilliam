@@ -1,4 +1,4 @@
-<h1 class="text-7xl mb-10 font-bold text-black">
+<h1 class="text-7xl mb-40 font-bold">
   Zahlen raten
 </h1>
 

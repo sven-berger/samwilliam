@@ -36,9 +36,9 @@ document.querySelector("form")?.addEventListener("submit", function () {
 }
 </style>
 
-  <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="../assets/stimulus-bootstrap.js"></script>
-  <!-- Tailwind CDN -->
+  <!-- Compiled Tailwind CSS (local build) -->
+  <link rel="stylesheet" href="/stylesheet/stylesheet.css">
 <!-- Eigene Schriftarten und globale Anpassungen -->
 <link rel="stylesheet" href="/stylesheet/global.css">
 </body>
