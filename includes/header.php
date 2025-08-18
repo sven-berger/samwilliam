@@ -1,5 +1,5 @@
 <?php
-ob_start();
+  ob_start();
 ?>
 
 <!DOCTYPE html>
@@ -7,6 +7,8 @@ ob_start();
 <head>
   <meta charset="UTF-8">
   <title>Sam William</title>
+  <link rel="stylesheet" href="/stylesheet/stylesheet.css">
+  <link rel="stylesheet" href="/stylesheet/global.css">
 </head>
 
 <body class="bg-gray-300 text-center p-0 m-0 text-lg">

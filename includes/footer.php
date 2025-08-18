@@ -15,7 +15,7 @@ tinymce.init({
     content_css:
     [
         'https://samwilliam.de/assets/highlightjs/styles/default.min.css',
-        'https://samwilliam.de/styles/tm-editor.css'
+        'https://samwilliam.de/stylesheet/tm-editor.css'
     ],
     menubar: false,
     language: 'de',
@@ -35,11 +35,5 @@ document.querySelector("form")?.addEventListener("submit", function () {
     display: none;
 }
 </style>
-
-  <script type="module" src="../assets/stimulus-bootstrap.js"></script>
-  <!-- Compiled Tailwind CSS (local build) -->
-  <link rel="stylesheet" href="/stylesheet/stylesheet.css">
-<!-- Eigene Schriftarten und globale Anpassungen -->
-<link rel="stylesheet" href="/stylesheet/global.css">
 </body>
 </html>
