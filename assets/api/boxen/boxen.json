@@ -8,7 +8,7 @@
     {
         "id": 1,
         "boxTitle": "Willkommensbox",
-        "content": "<p>Hallo Welt<\/p>",
-        "page": "Startseite"
+        "content": "<p>Willkommen auf meiner neuen Seite!<\/p>\r\n<p>Nach langer Vorbereitung ist sie endlich online &ndash; modern, schlank und ganz nach meinen Vorstellungen aufgebaut.<\/p>\r\n<p>&nbsp;<\/p>\r\n<p>Statt auf das bekannte <a href=\"https:\/\/getbootstrap.com\/\">Bootstrap<\/a> setze ich hier auf <a href=\"https:\/\/tailwindcss.com\/\">Tailwind CSS<\/a>. So bleibt die Seite von Anfang an responsiv, &uuml;bersichtlich und frei von unn&ouml;tigem Ballast.<\/p>\r\n<p>Im Backend l&auml;uft aktuell noch <a href=\"https:\/\/php.net\">PHP<\/a>, aber mittelfristig m&ouml;chte ich auf <a href=\"https:\/\/rubyonrails.org\/\">Ruby on Rails<\/a> umsteigen.<\/p>\r\n<p>Im Frontend vertraue ich auf <a href=\"https:\/\/stimulus.hotwired.dev\/\">JavaScript mit Stimulus<\/a>, das f&uuml;r eine klare Trennung von HTML und JavaScript sorgt &ndash; genau die Struktur, die ich mir immer gew&uuml;nscht habe.<\/p>\r\n<p>&nbsp;<\/p>\r\n<p>Mein Ziel war es, eine Seite zu schaffen, die schlicht, funktional und zukunftsorientiert ist. Nur drei Farben, ein schlankes Stylesheet und minimale Zusatz-CSS sorgen daf&uuml;r, dass alles aufger&auml;umt bleibt.<\/p>\r\n<p>&nbsp;<\/p>\r\n<p>Diese Seite ist mein pers&ouml;nliches Projekt, mit dem ich nicht nur neue Dinge ausprobiere, sondern auch kontinuierlich dazulerne.<\/p>\r\n<p>Und w&auml;hrend bis zu meiner Abschlusspr&uuml;fung im September 2025 das Lernen Vorrang hat, freue ich mich schon jetzt auf alles, was noch kommt.<\/p>",
+        "page": "01.01.1970 00:00"
     }
 ]

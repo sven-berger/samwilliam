@@ -2,16 +2,25 @@
   Startseite
 </h1>
 <section class="mb-20 content">
-  <p>Willkommen auf meiner neuen Seite!</p>
-  <p>Nach langer Vorbereitung ist sie endlich online – modern, schlank und ganz nach meinen Vorstellungen aufgebaut.</p><br>
-  <p>Statt auf das bekannte <a href="https://getbootstrap.com/">Bootstrap</a> setze ich hier auf <a href="https://tailwindcss.com/">Tailwind CSS</a>. So bleibt die Seite von Anfang an responsiv, übersichtlich und frei von unnötigem Ballast.</p>
-  <p>Im Backend läuft aktuell noch <a href="https://php.net">PHP</a>, aber mittelfristig möchte ich auf <a href="https://rubyonrails.org/">Ruby on Rails</a> umsteigen.</p>
-  <p>Im Frontend vertraue ich auf <a href="https://stimulus.hotwired.dev/">JavaScript mit Stimulus</a>, das für eine klare Trennung von HTML und JavaScript sorgt – genau die Struktur, die ich mir immer gewünscht habe.</p><br>
-  <p>Mein Ziel war es, eine Seite zu schaffen, die schlicht, funktional und zukunftsorientiert ist. Nur drei Farben, ein schlankes Stylesheet und minimale Zusatz-CSS sorgen dafür, dass alles aufgeräumt bleibt.<p>
-  <p>Diese Seite ist mein persönliches Projekt, mit dem ich nicht nur neue Dinge ausprobiere, sondern auch kontinuierlich dazulerne.</p>
-  <p>Und während bis zu meiner Abschlussprüfung im September 2025 das Lernen Vorrang hat, freue ich mich schon jetzt auf alles, was noch kommt. 🚀</p>
+  <div id="boxenOutput"></div>
 </section>
+<script>
+  fetch("/assets/api/boxen/boxen.json")
+    .then(response => response.json())
+    .then(data => {
+      // Nur den Eintrag mit id = 1 auswählen
+      const eintrag = data.find(item => item.id === 1);
 
+      if (eintrag) {
+        document.getElementById("boxenOutput").innerHTML = `
+          <div>${eintrag.content}</div>
+        `;
+      } else {
+        document.getElementById("boxenOutput").innerHTML = "Box nicht gefunden.";
+      }
+    })
+    .catch(error => console.error("Fehler beim Laden:", error));
+</script>
 <section class="mb-40">
   <h2 class="inline-block text-5xl border-b-4 text-red-500 border-orange-400 pb-2 mb-10 font-bold">Aktueller Wissensstand</h2>
   <div class="flex flex-col lg:flex-row gap-6">
