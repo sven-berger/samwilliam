@@ -1,6 +1,15 @@
 body {
   padding: 1.25rem; /* entspricht 40px */
+  font-family: Poppins, sans-serif;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 a {
   text-decoration: none;
