@@ -25,9 +25,10 @@ if (!$eintrag) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $headline = $_POST['headline'];
     $content = $_POST['content'];
-    $date = $_POST['date'];
+    $created_at = $_POST['created_at'];
+    $changed_at = date('Y-m-d H:i:s'); // aktueller Zeitstempel
 
-    $updateSql = "UPDATE blog SET headline = ?, content = ?, date = ? WHERE id = ?";
+    $updateSql = "UPDATE blog SET headline = ?, content = ?, created_at = ? WHERE id = ?";
     $updateStmt = $pdo->prepare($updateSql);
     $updateStmt->execute([$headline, $content, $date, $id]);
 
@@ -48,8 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <div>
-        <label class="block font-medium">Datum</label>
-        <input type="date" name="date" value="<?= date('Y-m-d', strtotime($eintrag['date'])) ?>" class="border px-3 py-2" required>
+        <label class="block font-medium">Veröffentlichung</label>
+        <input type="created_at" name="created_at" value="<?= date('d.m.Y H:i', strtotime($eintrag['created_at'])) ?>" class="border px-3 py-2" required>
     </div>
 
     <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Speichern</button>

@@ -20,12 +20,14 @@
 
           div.innerHTML = `
             <section class="mb-10">
-            <h2 class="text-xl text-red-500 mb-2"></h2>
-            <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
-            <h3>Veröffentlicht am <span class="text-red-500">${formatDatum(eintrag.date)}</span></h3>
-            <div class="content mt-5">
-              <p>${eintrag.content}</p>
-            </div>
+              <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
+              <h3>Veröffentlicht am <span class="text-red-500">${formatDatum(eintrag.created_at)}</span></h3>
+              <div class="content mt-5">
+                <p>${eintrag.content}</p>
+              </div>
+              <div class="mt-4 flex justify-end">
+                <small class="text-gray-500 italic">Letzte Änderung: ${formatDatum(eintrag.changed_at)}</small>
+              </div>
             </section>
           `;
           container.appendChild(div);
@@ -36,11 +38,13 @@
         console.error("Fehler:", error);
       });
 
-      function formatDatum(datumString) {
-        const datum = new Date(datumString);
-        const tag = String(datum.getDate()).padStart(2, '0');
-        const monat = String(datum.getMonth() + 1).padStart(2, '0');
-        const jahr = datum.getFullYear();
-        return `${tag}.${monat}.${jahr}`;
-      }
+    function formatDatum(datumString) {
+      const datum = new Date(datumString);
+      const tag = String(datum.getDate()).padStart(2, '0');
+      const monat = String(datum.getMonth() + 1).padStart(2, '0');
+      const jahr = datum.getFullYear();
+      const stunde = String(datum.getHours()).padStart(2, '0');
+      const minute = String(datum.getMinutes()).padStart(2, '0');
+      return `${tag}.${monat}.${jahr} um ${stunde}:${minute} Uhr`;
+    }
   </script>

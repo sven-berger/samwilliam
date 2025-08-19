@@ -4,7 +4,7 @@
 </h1>
 
 <?php
-  $sql = "SELECT id, headline, content, date FROM blog ORDER BY id DESC";
+  $sql = "SELECT id, headline, content, created_at FROM blog ORDER BY id DESC";
   $statement = $pdo->query($sql);
   $artikel = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -23,7 +23,7 @@
     <tr>
       <td><?= htmlspecialchars($eintrag['id']) ?></td>
       <td><?= htmlspecialchars($eintrag['headline']) ?></td>
-      <td><?= date('d.m.Y', strtotime($eintrag['date'])) ?></td>
+      <td><?= date('d.m.Y', strtotime($eintrag['created_at'])) ?>, <?= date('H:i', strtotime($eintrag['created_at'])) ?> Uhr</td>
       <td>
         <a href="index.php?page=article-edit&id=<?= urlencode($eintrag['id']) ?>" class="text-blue-500 hover:underline">Bearbeiten</a>
       </td>
