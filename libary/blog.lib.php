@@ -2,10 +2,6 @@
   Blog
 </h1>
 
-<?php
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/api/blog/blogAPI.php');
-?>
-
 <div id="blogContainer"></div>
 <script>
     fetch("/assets/api/blog/blog.json")
