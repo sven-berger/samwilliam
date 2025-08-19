@@ -1,0 +1,14 @@
+[
+    {
+        "id": 2,
+        "boxTitle": "Test",
+        "content": "Test",
+        "page": "Startseite"
+    },
+    {
+        "id": 1,
+        "boxTitle": "Willkommensbox",
+        "content": "<p>Hallo Welt<\/p>",
+        "page": "Startseite"
+    }
+]
