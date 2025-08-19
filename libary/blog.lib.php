@@ -21,7 +21,7 @@
               <div class="content mt-5">
                 <p>${eintrag.content}</p>
               </div>
-              <div class="mt-4 flex justify-end">
+              <div class="mt-10 flex">
                 <small class="text-gray-500 italic">Letzte Änderung: ${formatDatum(eintrag.changed_at)}</small>
               </div>
             </section>
