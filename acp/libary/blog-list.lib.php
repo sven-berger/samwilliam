@@ -1,6 +1,6 @@
 
 <h1 class="text-7xl mb-20 font-bold">
-  Übersicht der Blog-Arikel
+  Übersicht der Blog-Artikel
 </h1>
 
 <?php
