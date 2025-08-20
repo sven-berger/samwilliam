@@ -1,0 +1,54 @@
+import { Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js";
+
+export default class extends Controller {
+  static targets = [
+    "tableBody",
+    "alterEingabe",
+    "deinPreis"
+  ];
+
+  connect() {
+    this._preisliste = [];
+    this.eintrittspreiseAbrufen();
+  }
+
+  eintrittspreiseAbrufen() {
+    fetch("/assets/api/eintrittspreise/eintrittspreise.json")
+      .then((response) => response.json())
+      .then((daten) => {
+        this._preisliste = daten;
+        this.tableBodyTarget.innerHTML = daten
+          .map(
+            (eintrag) => `
+          <tr>
+            <td>${eintrag.alterVon}</td>
+            <td>${eintrag.alterBis}</td>
+            <td>${Number(eintrag.preis).toFixed(2)} €</td>
+          </tr>`
+          )
+          .join("");
+      })
+      .catch((err) => {
+        console.error("Fehler beim Laden der Eintrittspreise:", err);
+        this.tableBodyTarget.innerHTML =
+          '<tr><td colspan="3">Fehler beim Laden der Daten</td></tr>';
+      });
+  }
+
+  eintrittspreisRechner() {
+    const age = parseInt(this.alterEingabeTarget.value, 10);
+
+    if (isNaN(age)) {
+      this.deinPreisTarget.textContent = "";
+      return;
+    }
+
+    const tarif = this._preisliste.find(
+      (t) => age >= t.alterVon && age <= t.alterBis
+    );
+
+    this.deinPreisTarget.textContent = tarif
+      ? `${Number(tarif.preis).toFixed(2)} €`
+      : "Kein Tarif gefunden";
+  }
+}

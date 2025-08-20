@@ -39,18 +39,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <form method="POST" class="space-y-4">
     <div>
         <label class="block font-medium">Boxtitel</label>
-        <input type="text" name="boxTitle" value="<?= htmlspecialchars($boxen['boxTitle']) ?>" class="w-full border px-3 py-2" required>
+        <input type="text" name="boxTitle" value="<?= htmlspecialchars($boxen['boxTitle']) ?>" required>
     </div>
 
     <div>
         <label class="block font-medium">Inhalt</label>
-        <textarea name="content" rows="8" class="w-full border px-3 py-2" required><?= htmlspecialchars($boxen['content']) ?></textarea>
+        <textarea name="content" rows="8" required><?= htmlspecialchars($boxen['content']) ?></textarea>
     </div>
 
     <div>
         <label class="block font-medium">Zuhörige Seite</label>
-        <input type="text" name="page" value="<?= htmlspecialchars($boxen['page']) ?>" class="border px-3 py-2" required>
+        <input type="text" name="page" value="<?= htmlspecialchars($boxen['page']) ?>" required>
     </div>
 
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Speichern</button>
+    <button type="submit"∂>Speichern</button>
 </form>
