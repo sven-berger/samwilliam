@@ -2,7 +2,7 @@
 
 <!-- Sidebar (Desktop) -->
 <aside class="hidden lg:flex flex-col bg-red-600 text-white p-6 text-left min-h-screen">
-      <h3 class="text-lg font-bold lg:mb-10">Company Name</h3>
+      <h3 class="text-lg font-bold lg:mb-10">Sven Bergers aktuelles Projekt</h3>
     <nav class="space-y-2">
       <?php foreach ($navLinks as $link): ?>
         <?php if (!isset($link['children'])): ?>
@@ -40,7 +40,7 @@
   <!-- Top Navigation (Mobile) -->
   <div class="lg:hidden bg-red-600 text-white sticky top-0 z-50 text-left">
     <div class="mx-auto max-w-6xl px-4 flex items-center justify-between py-3">
-      <span class="font-semibold text-lg">Company Name</span>
+      <span class="font-semibold text-lg">Sven Bergers aktuelles Projekt</span>
       <details class="relative">
         <summary class="list-none cursor-pointer p-2 -m-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60">☰</summary>
         <div class="absolute right-0 mt-2 w-48 rounded-md bg-white text-gray-900 shadow-lg z-50">
