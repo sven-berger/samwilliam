@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div>
         <label class="block font-medium">Zuhörige Seite</label>
-        <input type="page" name="page" value="<?= date('d.m.Y H:i', strtotime($boxen['page'])) ?>" class="border px-3 py-2" required>
+        <input type="text" name="page" value="<?= htmlspecialchars($boxen['page']) ?>" class="border px-3 py-2" required>
     </div>
 
     <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Speichern</button>
