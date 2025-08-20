@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div>
         <label class="block font-medium">Preis</label>
-        <input type="number" step="0.01" name="preis" value="<?= htmlspecialchars($eintrittspreise['preis']) ?>" required>
+        <input type="number" name="preis" value="<?= htmlspecialchars($eintrittspreise['preis']) ?>" required>
     </div>
 
     <button type="submit">Speichern</button>

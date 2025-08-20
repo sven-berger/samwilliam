@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $preis  = trim($_POST['preis']);
 
 
-    $statement = $pdo->prepare('INSERT INTO blog (alterVon, alterBis, preis) VALUES (:alterVon, :alterBis, :preis)');
+    $statement = $pdo->prepare('INSERT INTO eintrittspreise (alterVon, alterBis, preis) VALUES (:alterVon, :alterBis, :preis)');
     $statement->execute([':alterVon' => $alterVon, ':alterBis'  => $alterBis, ':preis' => $preis]);
 
     if (!$statement) {
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div>
         <label class="block font-medium">Preis</label>
-        <input type="number" step="0.01" name="preis" required>
+        <input type="number" name="preis" required>
     </div>
 
     <button type="submit">Speichern</button>

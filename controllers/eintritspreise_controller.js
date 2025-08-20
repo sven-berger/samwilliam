@@ -16,6 +16,7 @@ export default class extends Controller {
     fetch("/assets/api/eintrittspreise/eintrittspreise.json")
       .then((response) => response.json())
       .then((daten) => {
+        daten.sort((a, b) => a.alterVon - b.alterVon);
         this._preisliste = daten;
         this.tableBodyTarget.innerHTML = daten
           .map(
@@ -47,8 +48,8 @@ export default class extends Controller {
       (t) => age >= t.alterVon && age <= t.alterBis
     );
 
-    this.deinPreisTarget.textContent = tarif
-      ? `${Number(tarif.preis).toFixed(2)} €`
+    this.deinPreisTarget.innerHTML = tarif
+      ? `Der Eintritt kostet für dich <span class='font-bold'>${Number(tarif.preis).toFixed(2)}</span>€.`
       : "Kein Tarif gefunden";
   }
 }

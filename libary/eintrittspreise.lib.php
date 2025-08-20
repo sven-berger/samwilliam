@@ -20,9 +20,6 @@
                 <label for="alterEingabe">Wie alt bist du?</label>
                 <input type="number" name="alterEingabe" id="alterEingabe" required data-eintrittspreise-target="alterEingabe">
             </div>
-            <div>
-                <button type="reset">Zurücksetzen</button>
-            </div>
         </form>
     </section>
 

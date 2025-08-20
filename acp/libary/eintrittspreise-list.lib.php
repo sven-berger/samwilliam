@@ -18,7 +18,6 @@
   <table>
     <thead>
       <tr>
-        <th>ID</th>
         <th>Alter von</th>
         <th>Alter bis</th>
         <th>Preis</th>
@@ -28,10 +27,9 @@
   <tbody>
       <?php foreach ($eintrittspreise as $eintrittspreis): ?>
       <tr>
-        <td><?= htmlspecialchars($eintrittspreis['id']) ?></td>
         <td><?= htmlspecialchars($eintrittspreis['alterVon']) ?></td>
         <td><?= htmlspecialchars($eintrittspreis['alterBis']) ?></td>
-        <td><?= htmlspecialchars($eintrittspreis['preis']) ?>0€</td>
+        <td><?= htmlspecialchars($eintrittspreis['preis']) ?>,00€</td>
         <td>
             <a href="index.php?page=eintrittspreis-edit&id=<?= urlencode($eintrittspreis['id']) ?>" class="text-blue-500 hover:underline">Bearbeiten</a>
             <a href="index.php?page=eintrittspreis-delete&id=<?= urlencode($eintrittspreis['id']) ?>" class="text-red-500 hover:underline ml-4">Löschen</a>
