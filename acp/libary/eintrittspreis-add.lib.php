@@ -1,5 +1,5 @@
-<h1 class="text-7xl mb-20 font-bold">
-  Eintrittspreis hinzufügen
+<h1 class="text-7xl font-bold mb-40">
+    Eintrittspreis hinzufügen
 </h1>
 
 <?php
