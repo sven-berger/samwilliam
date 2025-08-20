@@ -1,6 +1,9 @@
   </main>
 </div>
 
+<!--- Stimulus einbinden --->
+<script type="module" src="../assets/stimulus-bootstrap.js"></script>
+
 <!-- Font Awesome 6 Free einbinden -->
 <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
 
