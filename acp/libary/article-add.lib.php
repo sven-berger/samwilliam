@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div>
         <label class="block font-medium">Veröffentlichung</label>
-        <input type="datetime-local" name="created_at" srequired>
+        <input type="datetime-local" name="created_at" required>
     </div>
 
     <!-- Artikel speichern -->
