@@ -1,26 +1,12 @@
 <h1 class="text-7xl font-bold mb-10">
   Startseite
 </h1>
-<section class="mb-20 content">
-  <div id="boxenOutput"></div>
-</section>
-<script>
-  fetch("/assets/api/boxen/boxen.json")
-    .then(response => response.json())
-    .then(data => {
-      // Nur den Eintrag mit id = 1 auswählen
-      const eintrag = data.find(item => item.id === 1);
 
-      if (eintrag) {
-        document.getElementById("boxenOutput").innerHTML = `
-          <div>${eintrag.content}</div>
-        `;
-      } else {
-        document.getElementById("boxenOutput").innerHTML = "Box nicht gefunden.";
-      }
-    })
-    .catch(error => console.error("Fehler beim Laden:", error));
-</script>
+<section class="mb-20" data-controller="startseiteBoxen">
+  <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold" data-startseiteBoxen-target="boxTitle"></h2>
+  <div class="content" data-startseiteBoxen-target="content"></div>
+</section>
+
 <section class="mb-40">
   <h2 class="inline-block text-5xl border-b-4 text-red-500 border-orange-400 pb-2 mb-10 font-bold">Aktueller Wissensstand</h2>
   <div class="flex flex-col lg:flex-row gap-6">
