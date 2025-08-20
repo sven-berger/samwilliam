@@ -1,5 +1,5 @@
-<h1 class="text-7xl font-bold mb-40">
-  Übersicht der Boxen
+<h1 class="text-7xl font-bold mb-20">
+    Übersicht der Boxen
 </h1>
 
 <?php

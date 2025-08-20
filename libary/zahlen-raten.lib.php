@@ -1,5 +1,5 @@
-<h1 class="text-7xl font-bold mb-40">
-  Zahlen raten
+<h1 class="text-7xl font-bold mb-20">
+    Zahlen raten
 </h1>
 
 <section data-controller="zahlenRaten">

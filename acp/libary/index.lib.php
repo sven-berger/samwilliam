@@ -1,5 +1,5 @@
-<h1 class="text-7xl font-bold mb-40">
-  Administrationsbereich
+<h1 class="text-7xl font-bold mb-20">
+    Administrationsbereich
 </h1>
 
 <section class="content">

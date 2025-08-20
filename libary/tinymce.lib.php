@@ -1,5 +1,5 @@
-<h1 class="text-7xl font-bold mb-40">
-  Einbindung: TinyMCE Editor
+<h1 class="text-7xl font-bold mb-20">
+    Einbindung: TinyMCE Editor
 </h1>
 
 <section class="mb-20 content">

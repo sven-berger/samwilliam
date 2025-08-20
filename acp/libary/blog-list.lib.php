@@ -1,5 +1,5 @@
-<h1 class="text-7xl font-bold mb-40">
-  Übersicht der Blog-Artikel
+<h1 class="text-7xl font-bold mb-20">
+    Übersicht der Blog-Artikel
 </h1>
 
 <?php

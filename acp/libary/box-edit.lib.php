@@ -1,4 +1,4 @@
-<h1 class="text-7xl font-bold mb-40">
+<h1 class="text-7xl font-bold mb-20">
     Box bearbeiten
 </h1>
 
