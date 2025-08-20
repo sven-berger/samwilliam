@@ -1,4 +1,4 @@
-<h1 class="text-7xl mb-10 font-bold">
+<h1 class="text-7xl font-bold mb-40">
   Einbindung: TinyMCE Editor
 </h1>
 

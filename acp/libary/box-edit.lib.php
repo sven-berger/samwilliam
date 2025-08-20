@@ -37,20 +37,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <form method="POST" class="space-y-4">
-    <div>
-        <label class="block font-medium">Boxtitel</label>
-        <input type="text" name="boxTitle" value="<?= htmlspecialchars($boxen['boxTitle']) ?>" required>
-    </div>
+    <label>Boxtitel</label>
+    <input type="text" name="boxTitle" value="<?= htmlspecialchars($boxen['boxTitle']) ?>" required>
 
-    <div>
-        <label class="block font-medium">Inhalt</label>
-        <textarea name="content" rows="8" required><?= htmlspecialchars($boxen['content']) ?></textarea>
-    </div>
+    <label>Inhalt</label>
+    <textarea name="content" rows="8" required><?= htmlspecialchars($boxen['content']) ?></textarea>
+    
+    <label>Zuhörige Seite</label>
+    <input type="text" name="page" value="<?= htmlspecialchars($boxen['page']) ?>" required>
 
-    <div>
-        <label class="block font-medium">Zuhörige Seite</label>
-        <input type="text" name="page" value="<?= htmlspecialchars($boxen['page']) ?>" required>
-    </div>
-
-    <button type="submit"∂>Speichern</button>
+    <button type="submit">Speichern</button>
+    <button type="reset">Zurücksetzen</button>
 </form>

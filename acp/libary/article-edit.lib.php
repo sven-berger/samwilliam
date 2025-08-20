@@ -37,21 +37,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <form method="POST" class="space-y-4">
-    <div>
-        <label class="block font-medium">Titel</label>
-        <input type="text" name="headline" value="<?= htmlspecialchars($eintrag['headline']) ?>" required>
-    </div>
+    <label>Titel</label>
+    <input type="text" name="headline" value="<?= htmlspecialchars($eintrag['headline']) ?>" required>
 
-    <div>
-        <label class="block font-medium">Inhalt</label>
-        <textarea name="content" rows="8" required><?= htmlspecialchars($eintrag['content']) ?></textarea>
-    </div>
-
-    <!-- Artikel speichern -->
-    <div>
-        <button type="submit">Artikel speichern</button>
-    </div>
-    <div>
-        <button type="reset">Zurücksetzen</button>
-    </div>
+    <label>Inhalt</label>
+    <textarea name="content" rows="8" required><?= htmlspecialchars($eintrag['content']) ?></textarea>
+    
+    <button type="submit">Artikel speichern</button>
+    <button type="reset">Zurücksetzen</button>
 </form>

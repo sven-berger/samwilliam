@@ -37,20 +37,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <form method="POST" class="space-y-4">
-    <div>
-        <label class="block font-medium">Alter von</label>
-        <input type="number" name="alterVon" value="<?= htmlspecialchars($eintrittspreise['alterVon']) ?>" required>
-    </div>
+    <label>Alter von</label>
+    <input type="number" name="alterVon" value="<?= htmlspecialchars($eintrittspreise['alterVon']) ?>" required>
 
-    <div>
-        <label class="block font-medium">Alter bis</label>
-        <input type="number" name="alterBis" value="<?= htmlspecialchars($eintrittspreise['alterBis']) ?>" required>
-    </div>
+    <label>Alter bis</label>
+    <input type="number" name="alterBis" value="<?= htmlspecialchars($eintrittspreise['alterBis']) ?>" required>
 
-    <div>
-        <label class="block font-medium">Preis</label>
-        <input type="number" name="preis" value="<?= htmlspecialchars($eintrittspreise['preis']) ?>" required>
-    </div>
+    <label>Preis</label>
+    <input type="number" name="preis" value="<?= htmlspecialchars($eintrittspreise['preis']) ?>" required>
 
     <button type="submit">Speichern</button>
+    <button type="reset">Zurücksetzen</button>
 </form>

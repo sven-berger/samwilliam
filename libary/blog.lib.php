@@ -1,7 +1,8 @@
-<h1 class="text-7xl mb-20 font-bold">
-  Blog
+<h1 class="text-7xl font-bold mb-40">
+    Blog
 </h1>
 
+<section>
 <div id="blogContainer"></div>
 <script>
     fetch("/assets/api/blog/blog.json")
@@ -44,3 +45,4 @@
       return `${tag}.${monat}.${jahr} um ${stunde}:${minute} Uhr`;
     }
   </script>
+</section>

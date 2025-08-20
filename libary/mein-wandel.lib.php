@@ -1,5 +1,5 @@
-<h1 class="text-7xl font-bold mb-10">
-  Mein Wandel
+<h1 class="text-7xl font-bold mb-40">
+    Mein Wandel
 </h1>
 <section class="mb-20">
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>

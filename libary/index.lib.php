@@ -1,4 +1,4 @@
-<h1 class="text-7xl font-bold mb-10">
+<h1 class="text-7xl font-bold mb-40">
   Startseite
 </h1>
 
@@ -6,7 +6,6 @@
   <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold" data-startseiteBoxen-target="boxTitle"></h2>
   <div class="content" data-startseiteBoxen-target="content"></div>
 </section>
-
 
 <section class="mb-40">
   <h2 class="inline-block text-5xl border-b-4 text-red-500 border-orange-400 pb-2 mb-10 font-bold">Aktueller Wissensstand</h2>

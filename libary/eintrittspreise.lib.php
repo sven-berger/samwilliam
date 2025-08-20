@@ -1,5 +1,5 @@
-<h1 class="text-7xl mb-40 font-bold">
-  Eintrittspreis-Rechner
+<h1 class="text-7xl font-bold mb-40">
+    Eintrittspreis-Rechner
 </h1>
 
 <section class="mb-20 content" data-controller="eintrittspreise">
@@ -24,8 +24,6 @@
     </section>
 
     <section>
-        <div>
-            <p data-eintrittspreise-target="deinPreis"></p>
-        </div>
+        <p data-eintrittspreise-target="deinPreis"></p>
     </section>
 </section>
