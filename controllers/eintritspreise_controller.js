@@ -8,7 +8,7 @@ export default class extends Controller {
   ];
 
   connect() {
-    this._preisliste = [];
+    this.preisliste = [];
     this.eintrittspreiseAbrufen();
   }
 
@@ -17,7 +17,7 @@ export default class extends Controller {
       .then((response) => response.json())
       .then((daten) => {
         daten.sort((a, b) => a.alterVon - b.alterVon);
-        this._preisliste = daten;
+        this.preisliste = daten;
         this.tableBodyTarget.innerHTML = daten
           .map(
             (eintrag) => `
@@ -44,7 +44,7 @@ export default class extends Controller {
       return;
     }
 
-    const tarif = this._preisliste.find(
+    const tarif = this.preisliste.find(
       (t) => age >= t.alterVon && age <= t.alterBis
     );
 
