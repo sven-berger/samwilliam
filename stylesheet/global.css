@@ -37,7 +37,7 @@ body {
   color: #6B7280;
 }
 
-strong {
+strong, .label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -273,8 +273,11 @@ tr:nth-child(even) td {
 /* Code & Pre */
 .content code {
   background: #fcfcfc;
+  color: #fb923c;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
   font-family: monospace;
+  padding: 5px;
 }
 
 .content pre {
