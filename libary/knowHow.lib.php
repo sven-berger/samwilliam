@@ -22,7 +22,6 @@
 
 <section class="mb-10" data-controller="knowHowPage">
   <div id="knowHowContainer" data-knowHowPage-target="knowHowContainer"></div>
-  
   <template id="knowHowTemplate">
     <h2 class="inline-block text-6xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 font-bold"></h2>
     <p>Veröffentlicht am <span class="text-red-500"></span></p>
