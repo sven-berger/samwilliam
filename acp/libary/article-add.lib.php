@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $content  = trim($_POST['content']);
     $created_at  = trim($_POST['created_at']);
 
-
     $statement = $pdo->prepare('INSERT INTO blog (headline, content, created_at) VALUES (:headline, :content, :created_at)');
     $statement->execute([':headline' => $headline, ':content'  => $content, ':created_at' => $created_at]);
 
