@@ -185,60 +185,60 @@ tr:nth-child(even) td {
 
 .content h1 {
   display: inline-block;
-  font-size: 2.25rem;        /* Deutlich kleiner als text-5xl */
+  font-size: 3.75rem;        /* text-6xl */
   margin: 1.25rem 0;      /* mt-5 */
   border-bottom: 4px solid #fb923c; /* border-orange-400 */
-  color: #ef4444;           /* text-red-500 */
+  /* color: #ef4444;           text-red-500 */
   padding-bottom: 0.5rem;   /* pb-2 */
   font-weight: bold;
 }
 
 .content h2 {
   display: inline-block;
-  font-size: 1.75rem;        /* Deutlich kleiner als text-5xl */
+  font-size: 3rem;        /* text-5xl */
   margin: 1.25rem 0;      /* mt-5 */
   border-bottom: 4px solid #fb923c; /* border-orange-400 */
-  color: #ef4444;           /* text-red-500 */
+  /* color: #ef4444;           text-red-500 */
   padding-bottom: 0.5rem;   /* pb-2 */
   font-weight: bold;
 }
 
 .content h3 {
   display: inline-block;
-  font-size: 1.5rem;        /* Deutlich kleiner als text-5xl */
+  font-size: 2.25rem;        /* text-4xl */
   margin: 1.25rem 0;      /* mt-5 */
   border-bottom: 4px solid #fb923c; /* border-orange-400 */
-  color: #ef4444;           /* text-red-500 */
+  /* color: #ef4444;           text-red-500 */
   padding-bottom: 0.5rem;   /* pb-2 */
   font-weight: bold;
 }
 
 .content h4 {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1.5rem /* text-2xl */;
   margin: 1.25rem 0;
   border-bottom: 4px solid #fb923c;
-  color: #ef4444;
+  /* color: #ef4444; */
   padding-bottom: 0.5rem;
   font-weight: bold;
 }
 
 .content h5 {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.25rem; /* text-xl */
   margin: 1.25rem 0;
   border-bottom: 4px solid #fb923c;
-  color: #ef4444;
+  /* color: #ef4444; */
   padding-bottom: 0.5rem;
   font-weight: bold;
 }
 
 .content h6 {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.125rem; /* text-lg */
   margin: 1.25rem 0;
   border-bottom: 4px solid #fb923c;
-  color: #ef4444;
+  /* color: #ef4444; */
   padding-bottom: 0.5rem;
   font-weight: bold;
   font-style: italic;

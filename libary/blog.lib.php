@@ -17,7 +17,7 @@
 
           div.innerHTML = `
             <section class="mb-10">
-              <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
+              <h2 class="inline-block text-6xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
               <h3>Veröffentlicht am <span class="text-red-500">${formatDatum(eintrag.created_at)}</span></h3>
               <div class="content mt-5">
                 <p>${eintrag.content}</p>

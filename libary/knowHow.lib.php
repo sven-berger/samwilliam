@@ -15,13 +15,9 @@
   </ul>
   <p>Mir ist auch klar, dass meine Methoden manchmal etwas umständlich sind und es oft kürzere oder elegantere Lösungen gäbe.</p>
   <p>Aber so habe ich es mir beigebracht, so verstehe ich es am besten – und am Ende ist das genau das, was für mich zählt.</p><br>
-  <strong style="display: block; padding: 10px;">
-    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist noch im Aufbau, ich werde sie aber regelmäßig erweitern und aktualisieren.<br>
-    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist öffentlich zugänglich, aber ich bitte darum, sie nicht zu kopieren oder anderweitig zu verwenden, ohne mich vorher zu fragen.<br>
-    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist unter der <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de" target="_blank">CC BY-NC-SA 4.0</a> Lizenz veröffentlicht,<br>
-    was bedeutet, dass sie für nicht-kommerzielle Zwecke genutzt werden kann, solange die Quelle genannt wird und die Inhalte unter derselben Lizenz weitergegeben werden.<br>
-    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist in JSON-Format gespeichert und kann über die <a href="/assets/api/knowHow/knowHow.json" target="_blank">API</a> abgerufen werden.
-  </strong>
+  <p><i class="fa-regular fa-circle-right"></i> Die Datenbank ist noch im Aufbau, ich werde sie aber regelmäßig erweitern und aktualisieren.<br>
+  <p><i class="fa-regular fa-circle-right"></i> Die Datenbank ist öffentlich zugänglich, aber ich bitte darum, sie nicht zu kopieren oder anderweitig zu verwenden, ohne mich vorher zu fragen.</p>
+  <p><i class="fa-regular fa-circle-right"></i> Die Datenbank ist in JSON-Format gespeichert und kann über die <a href="/assets/api/knowHow/knowHow.json" target="_blank">API</a> abgerufen werden.</p>
 </section>
 
 <div id="knowHowContainer"></div>
@@ -38,10 +34,11 @@
 
           div.innerHTML = `
             <section class="mb-10">
-              <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
+              <h2 class="inline-block text-6xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
               <h3>Veröffentlicht am <span class="text-red-500">${formatDatum(eintrag.created_at)}</span></h3>
               <div class="content mt-5">
-               <h5>${eintrag.description}</h5>
+              <h5 class="inline-block text-5xl mt-5 mb-1 pb-2 font-bold" style="border: none !important;">${eintrag.description}</h5>
+
               </div>
               <div class="content mt-5">
                 <p>${eintrag.content}</p>
