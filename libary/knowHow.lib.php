@@ -2,23 +2,47 @@
     KnowHow-Datenbank
 </h1>
 
-<section>
-<div id="blogContainer"></div>
+<section class="content mb-20">
+  <p>In dieser KnowHow-Datenbank halte ich meine neu gewonnenen IT-Kenntnisse fest.</p>
+  <p>Die Themen sind allgemein für die Ausbildung bzw. Umschulung zum Fachinformatiker wichtig, stehen für mich aktuell aber vor allem im Zeichen der anstehenden IHK-Abschlussprüfung Teil 1 am 17.09.2025.</p>
+  <p>Zwar bin ich angehender Fachinformatiker für Anwendungsentwicklung (FIAE), aber da die AP1 für alle Fachrichtungen gleich ist, decke ich hier bewusst auch diese Themen ab.</p>
+  <p>Folgende Fachrichtungen schreiben die AP1:</p>
+  <ul>
+    <li>Fachinformatiker für Systemintegration <span class="font-bold">(FISI)</span></li>
+    <li>Fachinformatiker für Daten- und Prozessanalyse <span class="font-bold">(FIDA)</span></li>
+    <li>IT-System-Elektroniker <span class="font-bold">(ITSE)</span></li>
+    <li>sowie den Prüfungsbereich „Digitale Infrastruktur – Management" <span class='font-bold'>(Dig.-Man.)</span></li>
+  </ul>
+  <p>Mir ist auch klar, dass meine Methoden manchmal etwas umständlich sind und es oft kürzere oder elegantere Lösungen gäbe.</p>
+  <p>Aber so habe ich es mir beigebracht, so verstehe ich es am besten – und am Ende ist das genau das, was für mich zählt.</p><br>
+  <strong style="display: block; padding: 10px;">
+    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist noch im Aufbau, ich werde sie aber regelmäßig erweitern und aktualisieren.<br>
+    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist öffentlich zugänglich, aber ich bitte darum, sie nicht zu kopieren oder anderweitig zu verwenden, ohne mich vorher zu fragen.<br>
+    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist unter der <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de" target="_blank">CC BY-NC-SA 4.0</a> Lizenz veröffentlicht,<br>
+    was bedeutet, dass sie für nicht-kommerzielle Zwecke genutzt werden kann, solange die Quelle genannt wird und die Inhalte unter derselben Lizenz weitergegeben werden.<br>
+    <i class="fa-regular fa-circle-right"></i> Die Datenbank ist in JSON-Format gespeichert und kann über die <a href="/assets/api/knowHow/knowHow.json" target="_blank">API</a> abgerufen werden.
+  </strong>
+</section>
+
+<div id="knowHowContainer"></div>
 <script>
     fetch("/assets/api/knowHow/knowHow.json")
       .then(response => response.json())
       .then(daten => {
-        const container = document.getElementById("blogContainer");
+        const container = document.getElementById("knowHowContainer");
         container.innerHTML = ""
 
         daten.forEach(eintrag => {
           const div = document.createElement("div");
-          div.className = "blog-entry";
+          div.className = "knowHow-entry";
 
           div.innerHTML = `
             <section class="mb-10">
               <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
               <h3>Veröffentlicht am <span class="text-red-500">${formatDatum(eintrag.created_at)}</span></h3>
+              <div class="content mt-5">
+               <h5>${eintrag.description}</h5>
+              </div>
               <div class="content mt-5">
                 <p>${eintrag.content}</p>
               </div>
