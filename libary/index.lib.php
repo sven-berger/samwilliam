@@ -54,8 +54,7 @@
 
 <section class="mb-10 content" id="IHK1">
   <h3>Meine Vorbereitung auf die IHK-Abschlussprüfung Teil 1</h3>
-  <p>In den letzten Monaten habe ich mich intensiv auf die IHK-Abschlussprüfung Teil 1 vorbereitet. Dabei habe ich nicht nur die theoretischen Grundlagen gelernt, sondern auch praktische Erfahrungen
-gesammelt. Ich habe an verschiedenen Projekten gearbeitet, um mein Wissen in der Praxis anzuwenden und zu vertiefen.</p>
+  <p>In den letzten Monaten habe ich mich intensiv auf die IHK-Abschlussprüfung Teil 1 vorbereitet. Dabei habe ich nicht nur die theoretischen Grundlagen gelernt, sondern auch praktische Erfahrungen Sgesammelt. Ich habe an verschiedenen Projekten gearbeitet, um mein Wissen in der Praxis anzuwenden und zu vertiefen.</p>
   <p>Die wichtigsten Themen, die ich gelernt habe, sind:</p>
   <ul>
     <li>Hardware und Software</li>
@@ -83,7 +82,6 @@ gesammelt. Ich habe an verschiedenen Projekten gearbeitet, um mein Wissen in der
   <p>Zu meinen Kenntnissen gehören die Grundlagen wie Funktionen, Arrays, Schleifen und die Anbindung an MySQL, aber auch objektorientierte Programmierung.</p><br>
   <p>Und auch wenn viele über PHP lästern und behaupten, es sei eine „tote Sprache“ – für mich bleibt sie meine Lieblingssprache, die ich neben JavaScript und Ruby (on Rails) auch in Zukunft weiter nutzen möchte.</p>
 </section>
-
 
 <section class="mb-10">
   <h2 class="inline-block text-5xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">Zukunftspläne</h2>
@@ -138,6 +136,7 @@ gesammelt. Ich habe an verschiedenen Projekten gearbeitet, um mein Wissen in der
   <p>Besonders interessant finde ich, wie nahtlos React mit Backends wie Rails oder PHP zusammenarbeitet.</p>
   <p>Auch mein Praktikumsbetrieb setzt auf React: Für kleinere Projekte wird dort Stimulus genutzt, bei größeren Projekten hingegen React – und genau diesen Praxisbezug möchte ich für mich aufbauen.</p>
 </section>
+
 <section class="mb-10 content" id="DatenbankArchitektur">
   <h3>Datenbank-Architektur verstehen</h3>
   <p>Ein weiterer Bereich, den ich vertiefen möchte, viel mehr muss, ist die Datenbank-Architektur.</p>
