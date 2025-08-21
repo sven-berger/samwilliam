@@ -20,50 +20,16 @@
   <p><i class="fa-regular fa-circle-right"></i> Die Datenbank ist in JSON-Format gespeichert und kann über die <a href="/assets/api/knowHow/knowHow.json" target="_blank">API</a> abgerufen werden.</p>
 </section>
 
-<div id="knowHowContainer"></div>
-<script>
-    fetch("/assets/api/knowHow/knowHow.json")
-      .then(response => response.json())
-      .then(daten => {
-        const container = document.getElementById("knowHowContainer");
-        container.innerHTML = ""
-
-        daten.forEach(eintrag => {
-          const div = document.createElement("div");
-          div.className = "knowHow-entry";
-
-          div.innerHTML = `
-            <section class="mb-10">
-              <h2 class="inline-block text-6xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold">${eintrag.headline}</h2>
-              <h3>Veröffentlicht am <span class="text-red-500">${formatDatum(eintrag.created_at)}</span></h3>
-              <div class="content mt-5">
-              <h5 class="inline-block text-5xl mt-5 mb-1 pb-2 font-bold" style="border: none !important;">${eintrag.description}</h5>
-
-              </div>
-              <div class="content mt-5">
-                <p>${eintrag.content}</p>
-              </div>
-              <div class="mt-10 flex">
-                <small class="text-gray-500 italic">Letzte Änderung: ${formatDatum(eintrag.changed_at)}</small>
-              </div>
-            </section>
-          `;
-          container.appendChild(div);
-        });
-      })
-      .catch(error => {
-        document.getElementById("blogContainer").innerHTML = "Fehler beim Laden der Artikel.";
-        console.error("Fehler:", error);
-      });
-
-    function formatDatum(datumString) {
-      const datum = new Date(datumString);
-      const tag = String(datum.getDate()).padStart(2, '0');
-      const monat = String(datum.getMonth() + 1).padStart(2, '0');
-      const jahr = datum.getFullYear();
-      const stunde = String(datum.getHours()).padStart(2, '0');
-      const minute = String(datum.getMinutes()).padStart(2, '0');
-      return `${tag}.${monat}.${jahr} um ${stunde}:${minute} Uhr`;
-    }
-  </script>
+<section class="mb-10" data-controller="knowHowPage">
+  <div id="knowHowContainer" data-knowHowPage-target="knowHowContainer"></div>
+  
+  <template id="knowHowTemplate">
+    <h2 class="inline-block text-6xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 font-bold"></h2>
+    <p>Veröffentlicht am <span class="text-red-500"></span></p>
+    <h4 class="inline-block text-5xl mt-5 mb-1 pb-2 font-bold" style="border: none !important;"></h4>
+    <div class="content"></div>
+    <div class="mt-10 mb-40 flex">
+      <small class="text-gray-500 italic">Letzte Änderung: <span></small>
+    </div>
+  </template>
 </section>
