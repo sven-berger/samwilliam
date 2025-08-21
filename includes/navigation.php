@@ -13,11 +13,11 @@
       <?php endforeach; ?>
     </nav>
 
-    <div class="mt-10 space-y-4">
+    <div class="sspace-y-4">
       <?php foreach ($navLinks as $link): ?>
         <?php if (isset($link['children'])): ?>
-          <hr class="border-white/20 my-4">
-          <span class="block text-xs tracking-wider font-semibold uppercase text-white/60"><?= $link['label'] ?></span>
+          
+          <span class="block text-xs tracking-wider font-semibold uppercase text-white/60 mt-10" style="margin-bottom: 10px;"><?= $link['label'] ?></span>
           <div class="space-y-1 pl-2">
             <?php foreach ($link['children'] as $child): ?>
               <a href="<?= $child['href'] ?>" class="block hover:underline" <?= isset($child['target']) ? ' target="' . $child['target'] . '"' : '' ?>>

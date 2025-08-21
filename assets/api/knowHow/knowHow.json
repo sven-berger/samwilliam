@@ -2,9 +2,9 @@
     {
         "id": 1,
         "headline": "Test",
-        "description": "<p>Test Test&nbsp;<\/p>",
+        "description": "<p data-start=\"158\" data-end=\"905\">Subnetting bedeutet, dass ein gro&szlig;es Computernetzwerk in mehrere kleinere Netzwerke aufgeteilt wird.<br>Jedes dieser kleineren Netzwerke enth&auml;lt eine bestimmte Anzahl an IP-Adressen, die direkt miteinander kommunizieren k&ouml;nnen.<br>Ob zwei Ger&auml;te im selben oder in verschiedenen Subnetzen liegen, wird durch die sogenannte Subnetzmaske bestimmt.<br>Die Subnetzmaske funktioniert wie eine Art Schablone, die vorgibt, welcher Teil der IP-Adresse das eigentliche Netzwerk beschreibt und welcher Teil f&uuml;r die einzelnen Ger&auml;te (Hosts) innerhalb dieses Netzwerks vorgesehen ist.<br>Befinden sich zwei Ger&auml;te im gleichen Subnetz, k&ouml;nnen sie direkt Daten austauschen.<br>Liegen sie in unterschiedlichen Subnetzen, wird ein Router ben&ouml;tigt, der die Kommunikation zwischen den Netzen &uuml;bernimmt.<br>Durch Subnetting wird ein Netzwerk &uuml;bersichtlicher, sicherer und effizienter verwaltbar.<\/p>",
         "content": "<p>Test Test Test<\/p>",
         "created_at": "2025-08-21 13:09:00",
-        "changed_at": "2025-08-21 13:15:27"
+        "changed_at": "2025-08-21 13:41:36"
     }
 ]

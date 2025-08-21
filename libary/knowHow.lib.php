@@ -1,11 +1,11 @@
 <h1 class="text-7xl font-bold mb-20">
-    Blog
+    KnowHow-Datenbank
 </h1>
 
 <section>
 <div id="blogContainer"></div>
 <script>
-    fetch("/assets/api/blog/blog.json")
+    fetch("/assets/api/knowHow/knowHow.json")
       .then(response => response.json())
       .then(daten => {
         const container = document.getElementById("blogContainer");
