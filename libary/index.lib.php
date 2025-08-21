@@ -79,7 +79,7 @@
   <h3>Meine Leidenschaft für PHP</h3>
   <p>PHP ist seit meiner Jugend eine große Leidenschaft in der Programmierung von mir – wahrscheinlich, weil es die erste Sprache war, die ich kennengelernt habe.<7p>
   <p>Bis heute begeistert sie mich, da PHP in der Regel ohne Framework auf nahezu jedem Server verfügbar ist und sich ein lokaler Webserver damit unkompliziert aufsetzen lässt.</p>
-  <p>Zu meinen Kenntnissen gehören die Grundlagen wie Funktionen, Arrays, Schleifen und die Anbindung an MySQL, aber auch objektorientierte Programmierung.</p><br>
+  <p>Zu meinen Kenntnissen gehören die Grundlagen wie Funktionen, Arrays, Schleifen und die Anbindung an MySQL, aber auch objektorientierte Programmierung.</p>
   <p>Und auch wenn viele über PHP lästern und behaupten, es sei eine „tote Sprache“ – für mich bleibt sie meine Lieblingssprache, die ich neben JavaScript und Ruby (on Rails) auch in Zukunft weiter nutzen möchte.</p>
 </section>
 
@@ -137,7 +137,7 @@
   <p>Auch mein Praktikumsbetrieb setzt auf React: Für kleinere Projekte wird dort Stimulus genutzt, bei größeren Projekten hingegen React – und genau diesen Praxisbezug möchte ich für mich aufbauen.</p>
 </section>
 
-<section class="mb-10 content" id="DatenbankArchitektur">
+<section class="content" id="DatenbankArchitektur">
   <h3>Datenbank-Architektur verstehen</h3>
   <p>Ein weiterer Bereich, den ich vertiefen möchte, viel mehr muss, ist die Datenbank-Architektur.</p>
   <p>Mich fasziniert, wie durch eine gute Strukturierung von Tabellen und Beziehungen Daten nicht nur korrekt gespeichert, sondern auch effizient abgefragt und verarbeitet werden können.</p>
