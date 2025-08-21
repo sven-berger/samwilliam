@@ -188,7 +188,6 @@ tr:nth-child(even) td {
   font-size: 3.75rem;        /* text-6xl */
   margin: 1.25rem 0;      /* mt-5 */
   border-bottom: 4px solid #fb923c; /* border-orange-400 */
-  /* color: #ef4444;           text-red-500 */
   padding-bottom: 0.5rem;   /* pb-2 */
   font-weight: bold;
 }
@@ -198,7 +197,6 @@ tr:nth-child(even) td {
   font-size: 3rem;        /* text-5xl */
   margin: 1.25rem 0;      /* mt-5 */
   border-bottom: 4px solid #fb923c; /* border-orange-400 */
-  /* color: #ef4444;           text-red-500 */
   padding-bottom: 0.5rem;   /* pb-2 */
   font-weight: bold;
 }
@@ -208,7 +206,6 @@ tr:nth-child(even) td {
   font-size: 2.25rem;        /* text-4xl */
   margin: 1.25rem 0;      /* mt-5 */
   border-bottom: 4px solid #fb923c; /* border-orange-400 */
-  /* color: #ef4444;           text-red-500 */
   padding-bottom: 0.5rem;   /* pb-2 */
   font-weight: bold;
 }
@@ -218,7 +215,6 @@ tr:nth-child(even) td {
   font-size: 1.5rem /* text-2xl */;
   margin: 1.25rem 0;
   border-bottom: 4px solid #fb923c;
-  /* color: #ef4444; */
   padding-bottom: 0.5rem;
   font-weight: bold;
 }
@@ -228,7 +224,6 @@ tr:nth-child(even) td {
   font-size: 1.25rem; /* text-xl */
   margin: 1.25rem 0;
   border-bottom: 4px solid #fb923c;
-  /* color: #ef4444; */
   padding-bottom: 0.5rem;
   font-weight: bold;
 }
@@ -238,7 +233,6 @@ tr:nth-child(even) td {
   font-size: 1.125rem; /* text-lg */
   margin: 1.25rem 0;
   border-bottom: 4px solid #fb923c;
-  /* color: #ef4444; */
   padding-bottom: 0.5rem;
   font-weight: bold;
   font-style: italic;
