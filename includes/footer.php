@@ -10,7 +10,12 @@
 <!-- HightLight.js einbinden -->
 <link rel="stylesheet" href="/assets/highlightjs/styles/default.min.css">
 <script src="/assets/highlightjs/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+<script>
+  // Optional: Warnungen zu unescaped HTML unterdrücken (besser root cause fixen!)
+  hljs.configure({ ignoreUnescapedHTML: true });
+  // Nach DOM bereit
+  document.addEventListener('DOMContentLoaded', () => hljs.highlightAll());
+</script>
 
 <!-- TinyMCE-Editor einbinden -->
 <script src="/assets/tinymce/tinymce.min.js"></script>

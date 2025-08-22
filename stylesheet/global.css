@@ -266,8 +266,9 @@ tr:nth-child(even) td {
 
 /* Code & Pre */
 .content code {
-  color: #fb923c;
-  font-family: monospace;
+
+  background: #fcfcfc;
+  padding: 5px;
 }
 
 .content pre {
@@ -277,4 +278,14 @@ tr:nth-child(even) td {
   font-family: monospace;
   padding: 20px;
   margin: 20px 0;
+}
+
+.hover {
+  transition: transform 0.3s, box-shadow 0.3s; /* sorgt für die weiche Animation */
+}
+
+.hover:hover {
+  transform: scale(1.03); /* leichtes Vergrößern beim Hover */
+  box-shadow: 0 16px 32px rgba(0,0,0,0.22); /* kräftigerer Schatten */
+  border: 2px solid #ef4444;
 }
