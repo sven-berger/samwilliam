@@ -1,2 +1,4 @@
-Nö, einfach nö
-<a href="index.php">Zurück zur Startseite</a>
+<section>
+    <p>Nö, einfach nö</p>
+    <p><a href="index.php">Zurück zur Startseite</a></p>
+</section>

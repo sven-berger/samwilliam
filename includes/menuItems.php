@@ -28,6 +28,6 @@ $navLinks = [
 
 $footerLinks = [
   ['href' => '/impressum/', 'label' => 'Impressum'],
-  ['href' => '/datenschutz/', 'label' => 'Datenschutzerklärung'],
+  ['href' => '/datenschutzerklaerung/', 'label' => 'Datenschutzerklärung'],
   ['href' => '/kontakt/', 'label' => 'Kontakt']
 ];

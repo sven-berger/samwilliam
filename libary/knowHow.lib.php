@@ -2,7 +2,9 @@
     KnowHow-Datenbank
 </h1>
 
-<section class="content mb-20">
+<section class="content mb-10">
+      <div class="hover flex-1 bg-white border border-gray-300 rounded-lg p-6">
+
   <p>In dieser KnowHow-Datenbank halte ich meine neu gewonnenen IT-Kenntnisse fest.</p>
   <p>Die Themen sind allgemein für die Ausbildung bzw. Umschulung zum Fachinformatiker wichtig, stehen für mich aktuell aber vor allem im Zeichen der anstehenden IHK-Abschlussprüfung Teil 1 am 17.09.2025.</p>
   <p>Zwar bin ich angehender Fachinformatiker für Anwendungsentwicklung (FIAE), aber da die AP1 für alle Fachrichtungen gleich ist, decke ich hier bewusst auch diese Themen ab.</p>
@@ -18,6 +20,7 @@
   <p><i class="fa-regular fa-circle-right"></i> Die Datenbank ist noch im Aufbau, ich werde sie aber regelmäßig erweitern und aktualisieren.<br>
   <p><i class="fa-regular fa-circle-right"></i> Die Datenbank ist öffentlich zugänglich, aber ich bitte darum, sie nicht zu kopieren oder anderweitig zu verwenden, ohne mich vorher zu fragen.</p>
   <p><i class="fa-regular fa-circle-right"></i> Die Datenbank ist in JSON-Format gespeichert und kann über die <a href="/assets/api/knowHow/knowHow.json" target="_blank">API</a> abgerufen werden.</p>
+</div>
 </section>
 
 <section class="mb-10" data-controller="knowHowPage">

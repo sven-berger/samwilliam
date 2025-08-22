@@ -75,7 +75,7 @@
   <p>Tailwind hingegen hat mir gezeigt, wie es Dank dieses Werkzeuges es möglich ist, ein konsistentes Design zu erstellen, ohne viel Zeit mit dem Schreiben von CSS zu verbringen.</p>
 </section>
 
-<section class="mb-40 content" id="PHP">
+<section class="mb-10 content" id="PHP">
   <h3>Meine Leidenschaft für PHP</h3>
   <p>PHP ist seit meiner Jugend eine große Leidenschaft in der Programmierung von mir – wahrscheinlich, weil es die erste Sprache war, die ich kennengelernt habe.<7p>
   <p>Bis heute begeistert sie mich, da PHP in der Regel ohne Framework auf nahezu jedem Server verfügbar ist und sich ein lokaler Webserver damit unkompliziert aufsetzen lässt.</p>
