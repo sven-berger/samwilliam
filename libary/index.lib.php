@@ -77,7 +77,7 @@
 
 <section class="mb-10 content" id="PHP">
   <h3>Meine Leidenschaft für PHP</h3>
-  <p>PHP ist seit meiner Jugend eine große Leidenschaft in der Programmierung von mir – wahrscheinlich, weil es die erste Sprache war, die ich kennengelernt habe.<7p>
+  <p>PHP ist seit meiner Jugend eine große Leidenschaft in der Programmierung von mir – wahrscheinlich, weil es die erste Sprache war, die ich kennengelernt habe.</p>
   <p>Bis heute begeistert sie mich, da PHP in der Regel ohne Framework auf nahezu jedem Server verfügbar ist und sich ein lokaler Webserver damit unkompliziert aufsetzen lässt.</p>
   <p>Zu meinen Kenntnissen gehören die Grundlagen wie Funktionen, Arrays, Schleifen und die Anbindung an MySQL, aber auch objektorientierte Programmierung.</p>
   <p>Und auch wenn viele über PHP lästern und behaupten, es sei eine „tote Sprache“ – für mich bleibt sie meine Lieblingssprache, die ich neben JavaScript und Ruby (on Rails) auch in Zukunft weiter nutzen möchte.</p>
