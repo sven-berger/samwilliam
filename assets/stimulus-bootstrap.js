@@ -6,6 +6,7 @@ import startseiteBoxenController from "../controllers/startseiteBoxen_controller
 import eintrittspreiseController from "../controllers/eintritspreise_controller.js"
 import blogPageController from "../controllers/blogPage_controller.js"
 import knowHowPageController from "../controllers/knowHowPage_controller.js"
+import minitaschenrechnerController from "../controllers/minitaschenrechner_controller.js"
 
 
 
@@ -18,3 +19,4 @@ application.register("startseiteBoxen", startseiteBoxenController)
 application.register("eintrittspreise", eintrittspreiseController)
 application.register("blogPage", blogPageController)
 application.register("knowHowPage", knowHowPageController)
+application.register("minitaschenrechner", minitaschenrechnerController)
