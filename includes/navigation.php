@@ -13,10 +13,9 @@
       <?php endforeach; ?>
     </nav>
 
-    <div class="sspace-y-4">
+    <div class="space-y-4">
       <?php foreach ($navLinks as $link): ?>
         <?php if (isset($link['children'])): ?>
-          
           <span class="block text-xs tracking-wider font-semibold uppercase text-white/60 mt-10" style="margin-bottom: 10px;"><?= $link['label'] ?></span>
           <div class="space-y-1 pl-2">
             <?php foreach ($link['children'] as $child): ?>
@@ -28,13 +27,12 @@
         <?php endif; ?>
       <?php endforeach; ?>
     </div>
-    
-    <div class="flex-grow"></div>
     <div class="mt-auto space-y-2 text-sm border-t border-white/30 pt-4">
+      <?php require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/now.php"); ?>
       <?php foreach ($footerLinks as $link): ?>
         <a href="<?= $link['href'] ?>" class="block hover:underline"><?= $link['label'] ?></a>
       <?php endforeach; ?>
-    </div>
+      </div>
   </aside>
 
   <!-- Top Navigation (Mobile) -->
@@ -59,6 +57,7 @@
             <?php endif; ?>
           <?php endforeach; ?>
           <hr class="my-1 border-gray-300">
+          <?php require_once ($_SERVER['DOCUMENT_ROOT'] . "/includes/now.php"); ?>
           <?php foreach ($footerLinks as $link): ?>
             <a href="<?= $link['href'] ?>" class="block px-4 py-2 text-sm hover:bg-gray-100"><?= $link['label'] ?></a>
           <?php endforeach; ?>
