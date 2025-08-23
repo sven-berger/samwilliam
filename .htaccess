@@ -1,3 +1,5 @@
+php_value date.timezone "Europe/Berlin"
+
 RewriteEngine On
 
 # Statische Dateien ignorieren
