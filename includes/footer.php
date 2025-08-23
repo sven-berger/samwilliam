@@ -8,13 +8,37 @@
 <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
 
 <!-- HightLight.js einbinden -->
-<link rel="stylesheet" href="/assets/highlightjs/styles/default.min.css">
-<script src="/assets/highlightjs/highlight.min.js"></script>
+<link rel="stylesheet" href="/assets/highlight/styles/default.min.css">
+<script src="/assets/highlight/highlight.min.js"></script>
 <script>
-  // Optional: Warnungen zu unescaped HTML unterdrücken (besser root cause fixen!)
-  hljs.configure({ ignoreUnescapedHTML: true });
-  // Nach DOM bereit
-  document.addEventListener('DOMContentLoaded', () => hljs.highlightAll());
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!window.hljs) return;
+
+    // Highlight everything present at load
+    hljs.highlightAll();
+
+    // Observe dynamically inserted content (e.g., blog articles)
+    const root = document.querySelector('[data-controller="blogPage"], [data-controller="knowHowPage"]') || document.body;
+    const observer = new MutationObserver((mutationList) => {
+      for (const mutation of mutationList) {
+        mutation.addedNodes.forEach((node) => {
+          if (!(node instanceof Element)) return;
+
+          // If the added node itself is a code block
+          if (node.matches('pre code') && !node.classList.contains('hljs')) {
+            hljs.highlightElement(node);
+          }
+
+          // Or if it contains code blocks inside
+          node.querySelectorAll('pre code:not(.hljs)').forEach((el) => {
+            hljs.highlightElement(el);
+          });
+        });
+      }
+    });
+
+    observer.observe(root, { childList: true, subtree: true });
+  });
 </script>
 
 <!-- TinyMCE-Editor einbinden -->
@@ -25,7 +49,7 @@ tinymce.init({
     license_key: 'gpl',
     content_css:
     [
-        '/assets/highlightjs/styles/default.min.css',
+        '/assets/highlight/styles/default.min.css',
         '/stylesheet/tm-editor.css'
     ],
     menubar: false,

@@ -1,6 +1,7 @@
 <h1 class="text-7xl font-bold mb-20">
     Mein Wandel
 </h1>
+
 <section class="mb-20">
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
   <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>

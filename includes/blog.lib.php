@@ -2,12 +2,12 @@
     Blog
 </h1>
 
-<section class="mb-20 overflow-x-hidden break-words max-w-screen" data-controller="blogPage">
-  <div id="blogContainer" class="overflow-x-hidden break-words" data-blogPage-target="blogContainer"></div>
+<section class="mb-20" data-controller="blogPage">
+  <div id="blogContainer" data-blogPage-target="blogContainer"></div>
   <template id="blogTemplate">
     <h2 class="inline-block text-6xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 pb-2 font-bold"></h2>
     <p>Veröffentlicht am <span class="text-red-500"></span></p>
-    <div class="content mt-5 break-words whitespace-normal w-full max-w-full"></div>
+    <div class="content mt-5"></div>
     <div class="mt-10 mb-20 flex">
       <small class="text-gray-500 italic">Letzte Änderung: <span></small>
     </div>

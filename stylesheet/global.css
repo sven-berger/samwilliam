@@ -68,6 +68,10 @@ button:hover {
   transition: all;
 }
 
+form {
+  display: grid;
+}
+
 label {
   display: block;
   opacity: 0.8;
@@ -265,18 +269,19 @@ tr:nth-child(even) td {
 }
 
 /* Code & Pre */
-.content code {
-
+code {
   background: #fcfcfc;
   padding: 5px;
+  color: #fb923c;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-family: monospace;
 }
 
-.content pre {
-  background: #fcfcfc;
+pre {
   overflow-x: auto;
   border-left: 5px solid #ef4444;
   font-family: monospace;
-  padding: 20px;
   margin: 20px 0;
 }
 
