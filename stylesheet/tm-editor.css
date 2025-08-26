@@ -20,7 +20,7 @@ a:hover {
   color: #ef4444; 
 }
 
-strong, .label {
+h6, .label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -78,18 +78,6 @@ h5 {
   padding-bottom: 0.5rem;
   font-weight: bold;
 }
-
-h6 {
-  display: inline-block;
-  font-size: 1.125rem; /* text-lg */
-  margin: 1.25rem 0;
-  border-bottom: 4px solid #fb923c;
-  padding-bottom: 0.5rem;
-  font-weight: bold;
-  font-style: italic;
-}
-
-
 
 /* Tabellen */
 table {

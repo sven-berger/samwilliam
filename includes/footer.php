@@ -55,8 +55,30 @@ tinymce.init({
     menubar: false,
     language: 'de',
     language_url: 'https://samwilliam.de/assets/tinymce/langs/de.js',
+    formats: {
+        labelspan: { inline: 'span', classes: 'label' }
+    },
+    extended_valid_elements: 'span[class]',
     plugins: 'anchor autolink charmap emoticons code table lists fullscreen wordcount link image autosave advlist codesample preview',
-    toolbar: 'code undo redo | bold italic | blocks | link image codesample table blockquote | bullist numlist | alignleft aligncenter alignright removeformat preview',
+    setup: function (editor) {
+        editor.ui.registry.addToggleButton('labelspan', {
+            tooltip: 'Als Label markieren',
+            text: 'Label',
+            onAction: function () {
+                editor.formatter.toggle('labelspan');
+            },
+            onSetup: function (api) {
+                var handler = function () {
+                    api.setActive(editor.formatter.match('labelspan'));
+                };
+                editor.on('NodeChange', handler);
+                return function () {
+                    editor.off('NodeChange', handler);
+                };
+            }
+        });
+    },
+    toolbar: 'code undo redo | bold italic | blocks | labelspan | link image codesample table blockquote | bullist numlist | alignleft aligncenter alignright removeformat preview',
     fontsize_formats: "10pt 12pt 14pt 16pt 18pt 24pt 36pt"
 });
 document.querySelector("form")?.addEventListener("submit", function () {

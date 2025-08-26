@@ -37,7 +37,7 @@ body {
   color: #6B7280;
 }
 
-strong, .label {
+h6, .label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -230,16 +230,6 @@ tr:nth-child(even) td {
   border-bottom: 4px solid #fb923c;
   padding-bottom: 0.5rem;
   font-weight: bold;
-}
-
-.content h6 {
-  display: inline-block;
-  font-size: 1.125rem; /* text-lg */
-  margin: 1.25rem 0;
-  border-bottom: 4px solid #fb923c;
-  padding-bottom: 0.5rem;
-  font-weight: bold;
-  font-style: italic;
 }
 
 /* Blockquotes */

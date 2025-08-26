@@ -29,6 +29,7 @@
     <h2 class="inline-block text-6xl mt-5 mb-10 border-b-4 text-red-500 border-orange-400 font-bold"></h2>
     <p>Veröffentlicht am <span class="text-red-500"></span></p>
     <h4 class="inline-block text-5xl mt-5 mb-1 pb-2 font-bold" style="border: none !important;"></h4>
+    <!-- <div class="inline-block description border rounded-lg p-6 bg-white mt-10 mb-10 italic"></div> -->
     <div class="content"></div>
     <div class="mt-10 mb-40 flex">
       <small class="text-gray-500 italic">Letzte Änderung: <span></small>

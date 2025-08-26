@@ -17,6 +17,7 @@ export default class extends Controller {
             const clone = template.content.cloneNode(true);
             clone.querySelector("h2").textContent = eintrag.headline;
             clone.querySelector("p span").textContent = this.formatDate(eintrag.created_at);
+            // clone.querySelector(".description").innerHTML = eintrag.description;
             clone.querySelector(".content").innerHTML = eintrag.content;
             clone.querySelector("small span").textContent = this.formatDate(eintrag.changed_at);
 
