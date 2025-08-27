@@ -51,6 +51,19 @@ h6, .label {
   border: 1px solid #e5e7eb;
 }
 
+.label strong::before {
+    content: '\f08d' '  ';
+  	font-family: "Font Awesome 6 Free";
+  	font-weight: 600 !important;
+		color: #fb923c;
+    margin-left: 10px;
+}
+
+.label strong {
+  font-weight: 700 !important;
+  color: #fb923c;
+}
+
 button {
   background-color: #ef4444;
   width: 100%;
@@ -263,16 +276,21 @@ code {
   background: #fcfcfc;
   padding: 5px;
   color: #fb923c;
-  border: 1px solid #e5e7eb;
-  border-radius: 4px;
   font-family: monospace;
 }
 
 pre {
+  background: #fcfcfc;
+  padding: 20px;
   overflow-x: auto;
   border-left: 5px solid #ef4444;
   font-family: monospace;
   margin: 20px 0;
+}
+
+pre code.hljs {
+  padding: 0 !important;
+  background: #fcfcfc;
 }
 
 .hover {

@@ -20,6 +20,19 @@ a:hover {
   color: #ef4444; 
 }
 
+.label strong::before {
+    content: '\f08d' '  ';
+  	font-family: "Font Awesome 6 Free";
+  	font-weight: 600 !important;
+		color: #fb923c;
+    margin-left: 10px;
+}
+
+.label strong {
+  font-weight: 700 !important;
+  color: #fb923c;
+}
+
 h6, .label {
   display: inline-flex;
   align-items: center;
