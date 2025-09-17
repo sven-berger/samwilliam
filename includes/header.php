@@ -11,6 +11,7 @@
   <title>Sam William</title>
   <link rel="stylesheet" href="/stylesheet/stylesheet.css">
   <link rel="stylesheet" href="/stylesheet/global.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32">
 </head>
 
 <body class="bg-gray-300 text-center p-0 m-0 text-lg">

@@ -11,3 +11,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/api/boxen/boxenAPI.php');
 
 $eintrittspreise = $_SERVER['DOCUMENT_ROOT'] . '/assets/api/eintrittspreise/eintrittspreise.json';
 require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/api/eintrittspreise/eintrittspreiseAPI.php');
+
+$skills = $_SERVER['DOCUMENT_ROOT'] . '/assets/api/skills/Skills.json';
+require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/api/skills/SkillsAPI.php');

@@ -7,7 +7,7 @@ import eintrittspreiseController from "../controllers/eintritspreise_controller.
 import blogPageController from "../controllers/blogPage_controller.js"
 import knowHowPageController from "../controllers/knowHowPage_controller.js"
 import minitaschenrechnerController from "../controllers/minitaschenrechner_controller.js"
-
+import SkillsController from "../controllers/SkillsController.js"
 
 
 
@@ -20,3 +20,4 @@ application.register("eintrittspreise", eintrittspreiseController)
 application.register("blogPage", blogPageController)
 application.register("knowHowPage", knowHowPageController)
 application.register("minitaschenrechner", minitaschenrechnerController)
+application.register("Skills", SkillsController)

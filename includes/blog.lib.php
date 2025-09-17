@@ -9,7 +9,7 @@
     <p>Veröffentlicht am <span class="text-red-500"></span></p>
     <div class="content mt-5"></div>
     <div class="mt-10 mb-20 flex">
-      <small class="text-gray-500 italic">Letzte Änderung: <span></small>
+      <small class="text-gray-500 italic">Letzte Änderung:</small>
     </div>
   </template>
 </section>
