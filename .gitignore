@@ -1,2 +1,4 @@
 /images
 /includes/db.php
+.idea
+.DS_Store
