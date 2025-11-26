@@ -33,14 +33,9 @@ export default class extends Controller {
                 alert(`${max} muss höher als ${min} sein!`)
             }
 
-
-            eckdaten.classList.remove("grid")
             eckdaten.classList.add("hidden")
-
             this.gesuchteZahl = zufallszahl(min, max);
 
-            meldung1.classList.remove("hidden")
-            ZahlRaten.classList.remove("hidden");
         }
     }
 

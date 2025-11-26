@@ -131,10 +131,11 @@
 
 <section class="mb-10 content" id="React">
   <h3>Das Webmonster React</h3>
-  <p>Ich möchte React erlernen, weil es im modernen Web nahezu allgegenwärtig ist – egal ob Webseiten oder Webapps.</p>
-  <p>Als JavaScript-Bibliothek bietet es mächtige Funktionen und erlaubt sogar die Entwicklung von Anwendungen für Smart-Geräte.</p>
-  <p>Besonders interessant finde ich, wie nahtlos React mit Backends wie Rails oder PHP zusammenarbeitet.</p>
-  <p>Auch mein Praktikumsbetrieb setzt auf React: Für kleinere Projekte wird dort Stimulus genutzt, bei größeren Projekten hingegen React – und genau diesen Praxisbezug möchte ich für mich aufbauen.</p>
+  <p>Ich möchte React erlernen, weil es im modernen Web nahezu allgegenwärtig ist – egal ob klassische Webseiten, komplexe Webapps oder sogar mobile Anwendungen.</p>
+  <p>Als JavaScript-Bibliothek bietet React mächtige Funktionen, um Benutzeroberflächen aus wiederverwendbaren Komponenten aufzubauen.</p>
+  <p>Mit React Native lassen sich diese Konzepte sogar auf Smartphones und andere Smart-Geräte übertragen, sodass sich native Apps mit vertrauter Web-Technologie entwickeln lassen.</p>
+  <p>Besonders spannend finde ich, wie flexibel React mit serverseitigen Backends zusammenarbeitet: Systeme wie Rails oder PHP können Daten über APIs oder initiales HTML bereitstellen, die dann von React dynamisch verarbeitet und dargestellt werden.</p>
+  <p>Auch mein Praktikumsbetrieb setzt auf diese Kombination: Für kleinere Projekte wird dort Stimulus genutzt, bei größeren Projekten hingegen React – und genau diesen Praxisbezug möchte ich für mich aufbauen.</p>
 </section>
 
 <section class="content" id="DatenbankArchitektur">

@@ -40,7 +40,6 @@
   <form class="hidden" data-action="submit->zahlenRaten#ZahlPruefen" data-zahlenRaten-target="ZahlRaten" method="POST">
     <label for="zahlVersuch" class="font-light">Bitte gib deine Zahl ein:</label>
     <input id="zahlVersuch" name="zahlVersuch" type="number" required data-zahlenRaten-target="zahlVersuch">
-    
     <button type="submit">Raten</button>
   </form>
 </section>
