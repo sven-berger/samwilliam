@@ -1,8 +1,8 @@
 <?php
-    $servername = "i4l8.your-database.de";
-    $username = 'dreis1d';
-    $passwort = 'r4aPr7Qrv1jjyhxg';
-    $dbname = "dreis1d";
+    $servername = "server14.febas.net";
+    $username = 'webkompakt';
+    $passwort = 'odYupQuovTojur$';
+    $dbname = "WebKompakt";
     $port = 3306;
 
     $connection = new PDO("mysql:host=$servername;dbname=$dbname", $username, $passwort);
